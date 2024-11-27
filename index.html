@@ -5,7 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday, Del!</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        #game-container {
+            text-align: center;
+        }
+
+        canvas {
+            background: #111;
+            margin: 20px auto;
+            display: block;
+            border: 3px solid #555;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333; /* Dark gray for better contrast */
+        }
+
+        #info {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        #compliment {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #29a3a3;
+        }
+    </style>
 </head>
 <body>
     <div id="game-container">
